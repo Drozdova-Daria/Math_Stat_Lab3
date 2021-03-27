@@ -7,11 +7,11 @@
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \usepackage[unicode, pdftex]{hyperref}
 \usepackage{csvsimple}
+\usepackage[stable]{footmisc}
 
 \begin{document}
 
 \begin{titlepage}
-  \thispagestyle{empty}
   \centerline {Санкт-Петербургский политехнический университет}
   \centerline { им. Петра Великого}
   \centerline { }
@@ -159,32 +159,32 @@ P_H^T = P(x < X_1^T) + P(x > X_2^T) = (F(X_1^T) - P(x = X_1^T) + (1 - F(X_2^T))
 \center{\includegraphics[scale=0.5]{Uniform}}
 \caption{Боксплот Тьюки для равномерного распределения}
 \end{figure}
-\subsection{Фактическая доля выбросов}
+\subsection[Фактическая доля выбросов]{Фактическая доля выбросов\protect\footnote{Оставляем значащие цифры, одинаковые для мощностей выборки 20 и 100}}
 \begin{table}[hb]
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline 
 Вид распределения & Мощность выборки & Доля выбросов \\ 
 \hline 
-Нормальное & 20 & 0.023 \\ 
+Нормальное & 20 & 0.02 \\ 
 \hline 
-Нормальное & 100 & 0.009 \\ 
+Нормальное & 100 & 0.01 \\ 
 \hline 
-Коши & 20 & 0.149 \\ 
+Коши & 20 & 0.15\\ 
 \hline 
-Коши & 100 & 0.154 \\ 
+Коши & 100 & 0.15 \\ 
 \hline 
-Лапласа & 20 & 0.075 \\ 
+Лапласа & 20 & 0.08 \\ 
 \hline 
-Лапласа & 100 & 0.065 \\ 
+Лапласа & 100 & 0.07 \\ 
 \hline 
-Пуассона & 20 & 0.025 \\ 
+Пуассона & 20 & 0.03 \\ 
 \hline 
-Пуассона & 100 & 0.011 \\ 
+Пуассона & 100 & 0.01 \\ 
 \hline 
-Равномерное & 20 & 0.003 \\ 
+Равномерное & 20 & 0.00 \\ 
 \hline 
-Равномерное & 100 & 0.0 \\ 
+Равномерное & 100 & 0.00 \\ 
 \hline 
 \end{tabular} 
 \caption{Фактическая доля выбросов}
